@@ -4,6 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitness Hub Gym</title>
+    <style>
+        /* CSS for the background image */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-image: url('gym-background.jpg'); /* Path to your image */
+            background-size: cover; /* Ensures the image covers the entire area */
+            background-position: center; /* Centers the image */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            font-family: Arial, sans-serif;
+        }
+         /* Overlay effect to enhance readability of content */
+        .overlay {
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        /* Content inside the overlay */
+        .content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+        </style>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
